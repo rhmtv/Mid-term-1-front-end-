@@ -1,0 +1,94 @@
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        background-color: #333;
+        color: white;
+    }
+
+    .logo a {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        list-style: none;  /*chtobi tochki udalilis */
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 15px;
+        transition: background-color 0.3s ease;
+        border-radius: 15px;
+    }
+
+    .nav-links a:hover {
+        background-color: #555;
+    
+    }
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: #333;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-links li {
+            margin: 20px 0;
+        }
+
+        .navbar {
+            position: relative;
+        }
+
+        .burger {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .burger span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+
+        #menu-toggle:checked ~ nav .nav-links {
+            display: flex;
+            margin-top: 28px;
+        }
+    }
+    .burger {
+        display: none;
+        padding-left: 200px;
+    }
+
+    @media (max-width: 768px) {
+        .burger {
+            display: block;
+        }
+    }
+
+    /* Checkbox Hack for the Burger Menu */
+    #menu-toggle {
+        display: none;
+    }

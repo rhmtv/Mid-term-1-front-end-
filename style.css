@@ -1,0 +1,131 @@
+
+body{
+    background-image: url(sdu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.info-part {
+    display: flex;
+    justify-content: center; /* Центровка по горизонтали */
+    align-items: center; /* Центровка по вертикали (если потребуется) */
+    height: 100vh; /* Высота контейнера на 100% от высоты экрана */
+}
+.info-bg{
+    margin-top: 0; /* Убираем верхний отступ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    width: 800px;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+.info-my-img{
+    height: auto;
+    flex: 1;
+}
+#myphoto{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    display: block;
+}
+.info-text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 35px; 
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание иконок слева */
+    gap: 5px; /* Отступ между иконками */
+    margin-top: auto; /* Чтобы иконки были внизу текста */
+    padding-top: 10px; /* Отступ сверху, чтобы отделить от текста */
+}
+
+.icons img {
+
+    height: 40px; /* Уменьшаем размер иконок */    
+}
+
+
+#tt{
+    width: 70px;
+}
+#tg{
+    width: 42px;
+}
+
+
+.info-me {
+    border: 2px solid white;
+    background-color: white; /* Задний фон белого цвета */
+    width: 100%; /* Ширина блока */
+    margin: 20px auto; /* Центрирует блок по горизонтали */
+    padding: 20px; /* Внутренние отступы, чтобы текст не прижимался к краям */
+    text-align: justify; /* Выравнивание текста по краям */
+    border-radius: 10px; /* Скругление углов (по желанию) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Тень для блока (по желанию) */
+    text-align: center;
+    line-height: 1.5;
+}
+
+.info-me div:first-child {
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    font-size: 20px;
+}
+
+
+
+/* --------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .info-bg{
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .info-me{
+        margin-top: 400px;
+    }
+}
+
+
+.burger {
+    display: none;
+    padding-left: 200px;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+}
+
+/* Checkbox Hack for the Burger Menu */
+#menu-toggle {
+    display: none;
+}

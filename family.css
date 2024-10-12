@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(family-cartoon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.family-h {
+    display: flex; /* Используем Flexbox для центрирования содержимого */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    text-align: center;
+    margin-top: 40px; /* Отступ сверху для заголовка */
+    font-size: 30px; /* Размер шрифта заголовка */
+    color: #fff; /* Цвет текста */
+    position: relative; /* Для позиционирования псевдоэлементов */
+    padding: 20px 40px; /* Отступы вокруг текста */
+    border-radius: 10px; /* Скругленные углы */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Градиентный фон */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Тень для создания глубины */
+    transition: transform 0.3s ease, background 0.3s ease; /* Плавный переход при наведении */
+    width: fit-content; /* Ширина контейнера соответствует содержимому */
+    margin-left: auto; /* Для центрирования */
+    margin-right: auto; /* Для центрирования */
+    z-index: -1;
+}
+
+
+
+#txt {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .family-h {
+        font-size: 28px; 
+        padding: 15px 30px; /* Уменьшаем отступы на мобильных */
+    }
+}
+
+.family {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+/* Общие стили для контейнеров */
+.family-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для бабушки и дедушки */
+.family-container-grandparents {
+    background-color: white;
+}
+
+/* Контейнер для мамы и сестры */
+.family-container-mother-sister {
+    background-color: lightblue;
+}
+
+.family-member {
+    text-align: center;
+    padding: 10px;
+    line-height: 30px;
+}
+
+/* Устанавливаем фиксированные размеры для всех изображений */
+.family-member img {
+    width: 150px;  /* Установите ширину */
+    height: 150px; /* Установите высоту */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.family-member p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .family {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .family-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px) {
+    /* Навигация */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* Заголовок семьи */
+    .family-h {
+        font-size: 24px;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    /* Общий стиль семейных контейнеров */
+    .family {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    /* Контейнеры бабушки и дедушки, мамы и сестры */
+    .family-container {
+        width: 90%; /* Ширина на экранах 400px */
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* Семейные фотографии */
+    .family-member img {
+        width: 120px; /* Уменьшаем размер для маленьких экранов */
+        height: 120px;
+    }
+
+    /* Текст семейных членов */
+    .family-member p {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+        line-height: 22px; /* Высота строки меньше для мобильных */
+    }
+}
+
+

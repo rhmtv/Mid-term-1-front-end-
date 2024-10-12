@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(hobby.jpg);
+    min-height: 100vh;
+}
+
+
+
+.hobbies-section {
+    text-align: center;
+    padding: 50px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.hobbies-section h1 {
+    color: #fff; /* Цвет заголовка */
+    background-color: #2980b9; /* Фон заголовка */
+    padding: 20px; /* Отступы для заголовка */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для заголовка */
+    font-size: 36px; /* Размер шрифта заголовка */
+    margin-bottom: 40px;
+}
+
+.hobby {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.hobby-text {
+    width: 45%; /* Измените ширину текста для большей сбалансированности */
+}
+
+.hobby-image {
+    width: 40%; /* Измените ширину изображения для большей сбалансированности */
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hobby {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hobby-image {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .hobby-text {
+        width: 100%;
+    }
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+
